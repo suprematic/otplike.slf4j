@@ -41,4 +41,12 @@
   		<version>1.8.0</version>
   	</dependency>
   </dependencies>
+  
+  <distributionManagement>
+  	<repository>
+    	<id>clojars</id>
+    	<name>Clojars repository</name>
+    	<url>https://clojars.org/repo</url>
+  	</repository>
+  </distributionManagement>
 </project>
