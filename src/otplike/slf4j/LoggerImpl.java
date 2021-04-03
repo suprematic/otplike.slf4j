@@ -11,8 +11,8 @@ import clojure.lang.Keyword;
 
 public final class LoggerImpl extends MarkerIgnoringBase {
 	private static final long serialVersionUID = 1L;
-	private static final IFn is_enabled = Clojure.var("otplike.logger", "enabled?*");
-	private static final IFn log = Clojure.var("otplike.logger", "log*");
+	private static final IFn is_enabled = Clojure.var("otplike.logger", "j-enabled?");
+	private static final IFn log = Clojure.var("otplike.logger", "j-log");
 	private static final Keyword throwable = Keyword.intern("throwable");
 
 	@SuppressWarnings("unused")
