@@ -15,19 +15,11 @@ public final class LoggerImpl extends MarkerIgnoringBase {
 	private static final IFn log = Clojure.var("otplike.logger", "j-log");
 	private static final Keyword throwable = Keyword.intern("throwable");
 
-	@SuppressWarnings("unused")
-	private static final int Emergency = 0;
-	@SuppressWarnings("unused")
-	private static final int Alert = 1;
-	@SuppressWarnings("unused")
-	private static final int Critical = 2;
-	private static final int Error = 3;
-	private static final int Warn = 4;
-	@SuppressWarnings("unused")
-	private static final int Notice = 5;
-	private static final int Info = 6;
-	private static final int Debug = 7;
-	private static final int Trace = 8;
+	private static final Keyword Error = Keyword.intern("error");
+	private static final Keyword Warn =  Keyword.intern("warning");;
+	private static final Keyword Info = Keyword.intern("info");
+	private static final Keyword Debug = Keyword.intern("debug");;
+	private static final Keyword Trace = Keyword.intern("trace");;
 	
 	LoggerImpl(String name) {
 		this.name = name;
